@@ -15,14 +15,16 @@
         "titleFont": "Oxygen",
         "subtitleFont": "Libre Franklin",
         "textFont": "Libre Franklin",
-        "isRoundedButtons": false,
-        "isAnimatedOnScroll": false,
-        "isScrollToTopButton": false
+        "isRoundedButtons": true,
+        "isAnimatedOnScroll": true,
+        "isScrollToTopButton": true
       }
     },
     "versionFirst": "3.10.1",
-    "uniqCompNum": 12,
-    "versionPublish": "3.10.1"
+    "uniqCompNum": 15,
+    "versionPublish": "3.10.1",
+    "favicon": "@PROJECT_PATH@/assets/images/restyling-logo-eye-2016-128x124-63.png",
+    "noImageResize": ""
   },
   "pages": {
     "index.html": {
@@ -41,29 +43,30 @@
               "display": "none !important"
             },
             ".navbar-toggler": {
-              "color": "#74a3c7"
+              "color": "#000000"
             },
             ".close-icon::before, .close-icon::after": {
-              "background-color": "#74a3c7"
+              "background-color": "#000000"
             },
             ".link, .dropdown-item": {
-              "color": "#74a3c7",
-              "font-family": "'Libre Franklin', serif"
+              "color": "#000000",
+              "font-family": "'Oswald', sans-serif",
+              "googleLink": "https://fonts.googleapis.com/css?family=Oswald:400,300,700"
             },
             ".link": {
-              "font-size": "0.8125rem"
+              "font-size": "0.75rem"
             },
             ".dropdown-item, .nav-dropdown-sm .link": {
-              "font-size": "0.880rem"
+              "font-size": "0.812rem"
             },
             ".link:hover, .link:focus": {
-              "color": "@primaryColor"
+              "color": "#616161"
             },
             ".dropdown-item:hover::before, .dropdown-item:focus::before": {
-              "background": "@primaryColor"
+              "background": "#616161"
             },
             ".dropdown-item:hover, .dropdown-item:focus": {
-              "color": "#74a3c7"
+              "color": "#000000"
             },
             ".link[aria-expanded=\"true\"], .dropdown-menu": {
               "background": "#ffffff"
@@ -75,17 +78,22 @@
               "background": "#fff"
             },
             ".bg-color.transparent .link": {
-              "color": "#74a3c7",
+              "color": "#000000",
               "transition": "none"
             },
             ".bg-color.transparent.opened .link": {
               "transition": "color .2s ease-in-out"
             },
             ".bg-color.transparent.opened .link:hover, .bg-color.transparent.opened .link:focus": {
-              "color": "@primaryColor"
+              "color": "#616161"
             },
             ".link[aria-expanded=\"true\"], .dropdown-item[aria-expanded=\"true\"]": {
-              "color": "#5aac98!important"
+              "color": "#616161!important"
+            },
+            ".navbar-caption": {
+              "font-family": "'Roboto Condensed', sans-serif",
+              "googleLink": "https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700",
+              "font-size": "14px"
             }
           },
           "buttons": "<a class=\"btn btn-info\" data-app-btn=\"true\" href=\"https://mobirise.com\" data-app-placeholder=\"Type text\">Download now</a>",
@@ -96,17 +104,18 @@
           "_anchor": "menu2-2",
           "_params": {
             "bgColor": "#fff",
-            "fontSize": 0.8125,
-            "imageSize": 4,
+            "fontSize": "0.75",
+            "imageSize": "2.5",
             "fontName": {
-              "name": "Libre Franklin",
-              "css": "'Libre Franklin', serif",
-              "link": "https://fonts.googleapis.com/css?family=Libre+Franklin:400,400i,600,600i"
+              "name": "Oswald",
+              "css": "'Oswald', sans-serif",
+              "link": "https://fonts.googleapis.com/css?family=Libre+Franklin:400,400i,600,600i",
+              "url": "https://fonts.googleapis.com/css?family=Oswald:400,300,700"
             },
-            "fontColor": "#74a3c7",
-            "fontHoverColor": "@primaryColor",
+            "fontColor": "#000000",
+            "fontHoverColor": "#616161",
             "transparent": false,
-            "sticky": true,
+            "sticky": false,
             "logo": true,
             "showBrand": true,
             "collapsed": true,
@@ -128,33 +137,37 @@
               "size": 0
             }
           },
-          "brand": "<a class=\"navbar-caption\" data-app-btn=\"true\" data-app-selector=\".navbar-caption\" href=\"https://mobirise.com\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">REGALITO PARA MICHI</a>",
-          "items": "<li class=\"nav-item dropdown open\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" data-toggle=\"dropdown-submenu\" href=\"https://mobirise.com/\" aria-expanded=\"true\">HELP</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"http://forums.mobirise.com/\">Forum</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\">Tutorials</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\">Contact us</a></div></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-primary btn-lg btn\" href=\"https://mobirise.com/\">Download</a></li>"
+          "brand": "<a class=\"navbar-caption\" data-app-btn=\"true\" data-app-selector=\".navbar-caption\" href=\"https://mobirise.com\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\"><span class=\"mbri-smile-face mbr-iconfont mbr-iconfont-btn\"></span>REGALITO PARA MICHI</a>",
+          "items": "<li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" data-toggle=\"dropdown-submenu\" href=\"https://mobirise.com/\" aria-expanded=\"false\"></a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"http://forums.mobirise.com/\">Forum</a></div></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-primary btn-lg btn\" href=\"https://mobirise.com/\">Download</a></li>"
         },
         {
           "_styles": {
             ".mbr-section-title, .mbr-section-text": {
               "color": "#fff"
             },
-            ".mbr-section-title DIV": {
-              "font-family": "'Oswald', sans-serif",
-              "googleLink": "https://fonts.googleapis.com/css?family=Oswald:400,300,700"
-            },
             ".mbr-section-title": {
+              "color": "#fffffd",
               "font-family": "'Oswald', sans-serif",
               "googleLink": "https://fonts.googleapis.com/css?family=Oswald:400,300,700",
-              "color": "#000000",
+              "font-size": "60px",
               "text-align": "center"
             },
             ".mbr-section-text": {
-              "color": "#000000",
               "font-family": "'Roboto Condensed', sans-serif",
               "googleLink": "https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700",
-              "font-size": "32px",
+              "color": "#fffffd",
               "text-align": "center"
             },
+            ".mbr-section-title DIV": {
+              "text-align": "center",
+              "color": "#000000"
+            },
+            ".mbr-section-title SPAN": {
+              "color": "#fffffd",
+              "text-align": "right"
+            },
             ".mbr-section-title B": {
-              "font-size": "48px"
+              "text-align": "right"
             }
           },
           "arrowleft": "<img src=\"@THEME_PATH@/components/_images/slider/arrow-left.png\">",
@@ -167,35 +180,33 @@
             "autoplay": true,
             "paddingTop": 3,
             "paddingBottom": 3,
-            "timeout": "5",
+            "timeout": "10",
             "slides": [
               {
                 "active": false,
-                "image": "@PROJECT_PATH@/assets/images/john-ford-1024x789-2000x1541-97.jpg",
+                "image": "@PROJECT_PATH@/assets/images/john-ford-1024x789-2000x1541-45.jpg",
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "overlay": true,
-                "overlayOpacity": "0.5",
-                "overlayColor": "#fffffd",
+                "overlay": false,
+                "overlayOpacity": "0.1",
                 "contentAlign": "center",
                 "showTitle": true,
                 "title": "<br><br><br>En el día de tu<div><b>cumpleaños...</b></div>",
                 "showText": true,
-                "text": "<br>...aunque realmente faltan 7 días...",
+                "text": "<br>...aunque realmente falten 7 días...",
                 "showButtons": false,
                 "buttons": "<a data-app-btn=\"true\" class=\"btn btn-lg btn-primary\" href=\"https://mobirise.com\">For Windows</a> <a data-app-btn=\"true\" class=\"btn btn-lg btn-white btn-white-outline\" href=\"https://mobirise.com\">For Mac</a>"
               },
               {
                 "active": false,
-                "image": "@PROJECT_PATH@/assets/images/john-wayne-2000x1125-9.jpg",
+                "image": "@PROJECT_PATH@/assets/images/john-wayne-2000x1125-71.jpg",
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
                 "overlay": true,
-                "overlayOpacity": "0.5",
-                "overlayColor": "#fffffd",
+                "overlayOpacity": "0.2",
                 "contentAlign": "left",
                 "showTitle": true,
-                "title": "<br><br><br>...porque creemos que<br><b>te has portado bien...</b>",
+                "title": "<br><br><br>...porque creemos que<div><b>te has portado bien...</b></div><div><br></div>",
                 "showText": true,
                 "text": "...aunque seguro que a veces has sido muuuuy malo...",
                 "showButtons": false,
@@ -203,247 +214,117 @@
               },
               {
                 "active": false,
-                "image": "@PROJECT_PATH@/assets/images/woody-allen-widescreen-2000x1342-29.jpg",
+                "image": "@PROJECT_PATH@/assets/images/woody-allen-widescreen-2000x1342-70.jpg",
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
                 "overlay": true,
-                "overlayOpacity": "0.5",
-                "overlayColor": "#fffffd",
+                "overlayOpacity": "0.3",
+                "overlayColor": "#616161",
                 "contentAlign": "left",
                 "showTitle": true,
-                "title": "<br><br><br>...vamos a hacerte<br><b>un regalito...</b>",
+                "title": "<br><br><br>...vamos a hacerte<div><b>un regalito...</b></div><div><br></div>",
                 "showText": true,
                 "text": "...aunque estés un poco despistado...",
                 "showButtons": false,
-                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-lg btn-primary\" href=\"https://mobirise.com\">For Windows</a> <a data-app-btn=\"true\" class=\"btn btn-lg btn-white btn-white-outline\" href=\"https://mobirise.com\">For Mac</a>"
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-lg btn-info\" href=\"https://mobirise.com\">For Windows</a> <a data-app-btn=\"true\" class=\"btn btn-lg btn-white btn-white-outline\" href=\"https://mobirise.com\">For Mac</a>"
               },
               {
                 "active": false,
-                "image": "@PROJECT_PATH@/assets/images/bu176-big-truffaut4mn-2000x1125-99.jpg",
+                "image": "@PROJECT_PATH@/assets/images/bu176-big-truffaut4mn-2000x1125-3.jpg",
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
                 "overlay": true,
-                "overlayOpacity": "0.3",
-                "overlayColor": "#424242",
-                "contentAlign": "left",
+                "overlayOpacity": "0.5",
+                "contentAlign": "center",
                 "showTitle": true,
-                "title": "<br><br><br>...de esos que a ti<br><b>te gustan...</b>",
+                "title": "<br><br><br>...de esos que a ti<div><b>te gustan...</b></div><div><br></div>",
                 "showText": true,
                 "text": "...aunque puede que te sepa a poco...",
                 "showButtons": false,
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-lg btn-info\" href=\"https://mobirise.com\">For Windows</a> <a data-app-btn=\"true\" class=\"btn btn-lg btn-white btn-white-outline\" href=\"https://mobirise.com\">For Mac</a>"
+              },
+              {
+                "active": false,
+                "image": "@PROJECT_PATH@/assets/images/steven-spielberg-2000x1500-65.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "overlay": false,
+                "overlayOpacity": "0.9",
+                "overlayColor": "#fffffd",
+                "contentAlign": "right",
+                "showTitle": true,
+                "title": "<br><span style=\"letter-spacing: 0px; line-height: 1.12em;\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;...un regalo</span><br><div><b>&nbsp; &nbsp; &nbsp; fílmico...</b></div>",
+                "showText": false,
+                "text": "Choose from the large selection of latest pre-made blocks - jumbotrons, hero images, parallax scrolling, video backgrounds, hamburger menu, sticky header and more.",
+                "showButtons": false,
                 "buttons": "<a data-app-btn=\"true\" class=\"btn btn-lg btn-primary\" href=\"https://mobirise.com\">For Windows</a> <a data-app-btn=\"true\" class=\"btn btn-lg btn-white btn-white-outline\" href=\"https://mobirise.com\">For Mac</a>"
               },
               {
                 "active": false,
-                "image": "@PROJECT_PATH@/assets/images/steven-spielberg-2000x1500-46.jpg",
+                "image": "@PROJECT_PATH@/assets/images/wall-e-22-1024x690-2000x1347-5.jpg",
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
                 "overlay": true,
-                "overlayOpacity": "0.5",
+                "overlayOpacity": "0.2",
                 "overlayColor": "#fffffd",
                 "contentAlign": "left",
                 "showTitle": true,
-                "title": "<br><span style=\"font-size: 3.75rem; letter-spacing: 0px; line-height: 1.12em;\"><br></span><span style=\"font-size: 3.75rem; letter-spacing: 0px; line-height: 1.12em;\">...un regalo</span><br><b>fílmico...</b>",
+                "title": "<span style=\"letter-spacing: 0px; line-height: 1.12em; text-align: center;\"><br></span><span style=\"letter-spacing: 0px; line-height: 1.12em; text-align: center;\">...un regalo</span><br><div><b style=\"letter-spacing: 0px; line-height: 1.12em;\">mágico...</b><br></div>",
                 "showText": false,
-                "text": "",
+                "text": "Choose from the large selection of latest pre-made blocks - jumbotrons, hero images, parallax scrolling, video backgrounds, hamburger menu, sticky header and more.",
                 "showButtons": false,
                 "buttons": "<a data-app-btn=\"true\" class=\"btn btn-lg btn-primary\" href=\"https://mobirise.com\">For Windows</a> <a data-app-btn=\"true\" class=\"btn btn-lg btn-white btn-white-outline\" href=\"https://mobirise.com\">For Mac</a>"
               },
               {
                 "active": false,
-                "image": "@PROJECT_PATH@/assets/images/wall-e-22-1024x690-2000x1347-90.jpg",
+                "image": "@PROJECT_PATH@/assets/images/el-padrino-2000x1125-79.jpg",
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
                 "overlay": true,
-                "overlayOpacity": "0.5",
+                "overlayOpacity": "0.1",
+                "overlayColor": "#fffffd",
+                "contentAlign": "center",
+                "showTitle": true,
+                "title": "<br><span style=\"letter-spacing: 0px; line-height: 1.12em; text-align: center;\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><br><span style=\"letter-spacing: 0px; line-height: 1.12em; text-align: center;\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ...un regalo</span><br><div><b>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; familiar...</b></div>",
+                "showText": false,
+                "text": "Choose from the large selection of latest pre-made blocks - jumbotrons, hero images, parallax scrolling, video backgrounds, hamburger menu, sticky header and more.",
+                "showButtons": false,
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-lg btn-primary\" href=\"https://mobirise.com\">For Windows</a> <a data-app-btn=\"true\" class=\"btn btn-lg btn-white btn-white-outline\" href=\"https://mobirise.com\">For Mac</a>"
+              },
+              {
+                "active": false,
+                "image": "@PROJECT_PATH@/assets/images/tony-soprano-2000x1410-77.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "overlay": false,
+                "overlayOpacity": "0.1",
+                "contentAlign": "left",
+                "showTitle": true,
+                "title": "<br><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;...de parte de<div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<b>tus amigos.</b></div>",
+                "showText": false,
+                "text": "Choose from the large selection of latest pre-made blocks - jumbotrons, hero images, parallax scrolling, video backgrounds, hamburger menu, sticky header and more.",
+                "showButtons": false,
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-lg btn-primary\" href=\"https://mobirise.com\">For Windows</a> <a data-app-btn=\"true\" class=\"btn btn-lg btn-white btn-white-outline\" href=\"https://mobirise.com\">For Mac</a>"
+              },
+              {
+                "active": false,
+                "image": "@PROJECT_PATH@/assets/images/groucho-marx-2000x1200-84.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "overlay": false,
+                "overlayOpacity": "0.3",
                 "overlayColor": "#fffffd",
                 "contentAlign": "left",
                 "showTitle": true,
-                "title": "<br><span style=\"font-size: 3.75rem; letter-spacing: 0px; line-height: 1.12em;\"><br></span><span style=\"font-size: 3.75rem; letter-spacing: 0px; line-height: 1.12em;\">...un regalo</span><br><b>mágico...</b>",
+                "title": "Ummmm....",
                 "showText": false,
-                "text": "",
+                "text": "Choose from the large selection of latest pre-made blocks - jumbotrons, hero images, parallax scrolling, video backgrounds, hamburger menu, sticky header and more.",
                 "showButtons": false,
-                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-lg btn-primary\" href=\"https://mobirise.com\">For Windows</a> <a data-app-btn=\"true\" class=\"btn btn-lg btn-white btn-white-outline\" href=\"https://mobirise.com\">For Mac</a>"
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-lg btn-info\" href=\"https://mobirise.com\">For Windows</a> <a data-app-btn=\"true\" class=\"btn btn-lg btn-white btn-white-outline\" href=\"https://mobirise.com\">For Mac</a>"
               },
               {
                 "active": false,
-                "image": "@PROJECT_PATH@/assets/images/el-padrino-2000x1125-8.jpg",
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "overlay": true,
-                "overlayOpacity": "0.5",
-                "overlayColor": "#fffffd",
-                "contentAlign": "left",
-                "showTitle": true,
-                "title": "<br><span style=\"font-size: 3.75rem; letter-spacing: 0px; line-height: 1.12em;\"><br></span><span style=\"font-size: 3.75rem; letter-spacing: 0px; line-height: 1.12em;\">...un regalo</span><br><b>familiar...</b>",
-                "showText": false,
-                "text": "",
-                "showButtons": false,
-                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-lg btn-primary\" href=\"https://mobirise.com\">For Windows</a> <a data-app-btn=\"true\" class=\"btn btn-lg btn-white btn-white-outline\" href=\"https://mobirise.com\">For Mac</a>"
-              },
-              {
-                "active": false,
-                "image": "@PROJECT_PATH@/assets/images/tony-soprano-2000x1410-81.jpg",
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "overlay": true,
-                "overlayOpacity": "0.5",
-                "overlayColor": "#919191",
-                "contentAlign": "left",
-                "showTitle": true,
-                "title": "<br><span style=\"font-size: 3.75rem; letter-spacing: 0px; line-height: 1.12em;\"><br></span><span style=\"font-size: 3.75rem; letter-spacing: 0px; line-height: 1.12em;\">...de parte de</span><br><b>tus amigos.</b>",
-                "showText": false,
-                "text": "",
-                "showButtons": false,
-                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-lg btn-primary\" href=\"https://mobirise.com\">For Windows</a> <a data-app-btn=\"true\" class=\"btn btn-lg btn-white btn-white-outline\" href=\"https://mobirise.com\">For Mac</a>"
-              },
-              {
-                "active": false,
-                "image": "@PROJECT_PATH@/assets/images/groucho-marx-2000x1200-98.jpg",
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "overlay": true,
-                "overlayOpacity": "0.5",
-                "overlayColor": "#919191",
-                "contentAlign": "left",
-                "showTitle": true,
-                "title": "<br><span style=\"font-size: 3.75rem; letter-spacing: 0px; line-height: 1.12em;\"><br></span>Ummmmm...<br><br>",
-                "showText": false,
-                "text": "",
-                "showButtons": false,
-                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-lg btn-primary\" href=\"https://mobirise.com\">For Windows</a> <a data-app-btn=\"true\" class=\"btn btn-lg btn-white btn-white-outline\" href=\"https://mobirise.com\">For Mac</a>"
-              },
-              {
-                "active": false,
-                "image": "@PROJECT_PATH@/assets/images/default-2000x1125-3.jpg",
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "overlay": true,
-                "overlayOpacity": "0.5",
-                "overlayColor": "#919191",
-                "contentAlign": "left",
-                "showTitle": true,
-                "title": "<br><span style=\"font-size: 3.75rem; letter-spacing: 0px; line-height: 1.12em;\"><br></span>Vamos a por ese<br><b>regalo.</b><br><br>",
-                "showText": false,
-                "text": "",
-                "showButtons": false,
-                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-lg btn-primary\" href=\"https://mobirise.com\">For Windows</a> <a data-app-btn=\"true\" class=\"btn btn-lg btn-white btn-white-outline\" href=\"https://mobirise.com\">For Mac</a>"
-              },
-              {
-                "active": false,
-                "image": "@PROJECT_PATH@/assets/images/0927-walter-white-cog1-2000x1093-80.jpg",
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "overlay": true,
-                "overlayOpacity": "0.5",
-                "overlayColor": "#919191",
-                "contentAlign": "left",
-                "showTitle": true,
-                "title": "<br><span style=\"font-size: 3.75rem; letter-spacing: 0px; line-height: 1.12em;\"><br></span>No, no es una clase para<br><b>fabricar meta-anfetamina</b><br>",
-                "showText": false,
-                "text": "",
-                "showButtons": false,
-                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-lg btn-primary\" href=\"https://mobirise.com\">For Windows</a> <a data-app-btn=\"true\" class=\"btn btn-lg btn-white btn-white-outline\" href=\"https://mobirise.com\">For Mac</a>"
-              },
-              {
-                "active": false,
-                "image": "@PROJECT_PATH@/assets/images/mrrobot-show-2560x1440-2000x1125-75.jpg",
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "overlay": true,
-                "overlayOpacity": "0.4",
-                "overlayColor": "#fffffd",
-                "contentAlign": "left",
-                "showTitle": true,
-                "title": "<br><span style=\"font-size: 3.75rem; letter-spacing: 0px; line-height: 1.12em;\"><br></span>Ni unas clases para<br><b>hackear redes.</b><br>",
-                "showText": false,
-                "text": "",
-                "showButtons": false,
-                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-lg btn-primary\" href=\"https://mobirise.com\">For Windows</a> <a data-app-btn=\"true\" class=\"btn btn-lg btn-white btn-white-outline\" href=\"https://mobirise.com\">For Mac</a>"
-              },
-              {
-                "active": false,
-                "image": "@PROJECT_PATH@/assets/images/theknick-2000x1086-64.jpg",
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "overlay": true,
-                "overlayOpacity": "0.5",
-                "overlayColor": "#919191",
-                "contentAlign": "left",
-                "showTitle": true,
-                "title": "<br><span style=\"font-size: 3.75rem; letter-spacing: 0px; line-height: 1.12em;\"><br></span>Tampoco unas clases<br><b>de cirugía avanzada.</b><br>",
-                "showText": false,
-                "text": "",
-                "showButtons": false,
-                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-lg btn-primary\" href=\"https://mobirise.com\">For Windows</a> <a data-app-btn=\"true\" class=\"btn btn-lg btn-white btn-white-outline\" href=\"https://mobirise.com\">For Mac</a>"
-              },
-              {
-                "active": false,
-                "image": "@PROJECT_PATH@/assets/images/messi-2000x1199-33.jpg",
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "overlay": true,
-                "overlayOpacity": "0.5",
-                "overlayColor": "#919191",
-                "contentAlign": "left",
-                "showTitle": true,
-                "title": "<br><span style=\"font-size: 3.75rem; letter-spacing: 0px; line-height: 1.12em;\"><br></span><br>Perdona que te<br><b>corte el rollo...</b><br>",
-                "showText": false,
-                "text": "",
-                "showButtons": false,
-                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-lg btn-primary\" href=\"https://mobirise.com\">For Windows</a> <a data-app-btn=\"true\" class=\"btn btn-lg btn-white btn-white-outline\" href=\"https://mobirise.com\">For Mac</a>"
-              },
-              {
-                "active": false,
-                "image": "@PROJECT_PATH@/assets/images/maxresdefault-1-2000x1333-77.jpg",
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "overlay": true,
-                "overlayOpacity": "0.5",
-                "overlayColor": "#919191",
-                "contentAlign": "left",
-                "showTitle": true,
-                "title": "<br><span style=\"font-size: 3.75rem; letter-spacing: 0px; line-height: 1.12em;\"><br></span>Aquí está<br><b>TU REGALO</b><br>",
-                "showText": false,
-                "text": "",
-                "showButtons": false,
-                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-lg btn-primary\" href=\"https://mobirise.com\">For Windows</a> <a data-app-btn=\"true\" class=\"btn btn-lg btn-white btn-white-outline\" href=\"https://mobirise.com\">For Mac</a>"
-              },
-              {
-                "active": false,
-                "image": "@PROJECT_PATH@/assets/images/maxresdefault-1-2000x1333-77.jpg",
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "overlay": true,
-                "overlayOpacity": "0.5",
-                "overlayColor": "#919191",
-                "contentAlign": "left",
-                "showTitle": true,
-                "title": "<br><span style=\"font-size: 3.75rem; letter-spacing: 0px; line-height: 1.12em;\"><br></span>Aquí está<br><b>TU REGALO</b><br>",
-                "showText": false,
-                "text": "",
-                "showButtons": false,
-                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-lg btn-primary\" href=\"https://mobirise.com\">For Windows</a> <a data-app-btn=\"true\" class=\"btn btn-lg btn-white btn-white-outline\" href=\"https://mobirise.com\">For Mac</a>"
-              },
-              {
-                "active": false,
-                "image": "@PROJECT_PATH@/assets/images/maxresdefault-1-2000x1333-77.jpg",
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "overlay": true,
-                "overlayOpacity": "0.5",
-                "overlayColor": "#919191",
-                "contentAlign": "left",
-                "showTitle": true,
-                "title": "<br><span style=\"font-size: 3.75rem; letter-spacing: 0px; line-height: 1.12em;\"><br></span>Aquí está<br><b>TU REGALO</b><br>",
-                "showText": false,
-                "text": "",
-                "showButtons": false,
-                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-lg btn-primary\" href=\"https://mobirise.com\">For Windows</a> <a data-app-btn=\"true\" class=\"btn btn-lg btn-white btn-white-outline\" href=\"https://mobirise.com\">For Mac</a>"
-              },
-              {
-                "active": true,
-                "image": "@PROJECT_PATH@/assets/images/1432120675-tyrion-1-2000x1105-79.jpg",
+                "image": "@PROJECT_PATH@/assets/images/default-2000x1125-62.jpg",
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
                 "overlay": true,
@@ -451,18 +332,145 @@
                 "overlayColor": "#fffffd",
                 "contentAlign": "left",
                 "showTitle": true,
-                "title": "<br><span style=\"font-size: 3.75rem; letter-spacing: 0px; line-height: 1.12em;\"><br></span>Y ahora sí que sí...<br><b>Tu otro regalo.</b><br>",
+                "title": "<br>Vamos a por ese<div><b>regalo.</b></div>",
                 "showText": false,
-                "text": "",
+                "text": "Choose from the large selection of latest pre-made blocks - jumbotrons, hero images, parallax scrolling, video backgrounds, hamburger menu, sticky header and more.",
                 "showButtons": false,
-                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-lg btn-primary\" href=\"https://mobirise.com\">For Windows</a> <a data-app-btn=\"true\" class=\"btn btn-lg btn-white btn-white-outline\" href=\"https://mobirise.com\">For Mac</a>"
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-lg btn-info\" href=\"https://mobirise.com\">For Windows</a> <a data-app-btn=\"true\" class=\"btn btn-lg btn-white btn-white-outline\" href=\"https://mobirise.com\">For Mac</a>"
+              },
+              {
+                "active": false,
+                "image": "@PROJECT_PATH@/assets/images/0927-walter-white-cog1-2000x1093-12.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "overlay": false,
+                "overlayOpacity": "0.3",
+                "overlayColor": "#fffffd",
+                "contentAlign": "left",
+                "showTitle": true,
+                "title": "<span style=\"letter-spacing: 0px; line-height: 1.12em; text-align: center;\">No, no es una clase para</span><br><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<b>fabricar meta-anfetamina</b></div>",
+                "showText": false,
+                "text": "Choose from the large selection of latest pre-made blocks - jumbotrons, hero images, parallax scrolling, video backgrounds, hamburger menu, sticky header and more.",
+                "showButtons": false,
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-lg btn-info\" href=\"https://mobirise.com\">For Windows</a> <a data-app-btn=\"true\" class=\"btn btn-lg btn-white btn-white-outline\" href=\"https://mobirise.com\">For Mac</a>"
+              },
+              {
+                "active": false,
+                "image": "@PROJECT_PATH@/assets/images/mrrobot-show-2560x1440-2000x1125-65.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "overlay": false,
+                "overlayOpacity": "0.3",
+                "overlayColor": "#fffffd",
+                "contentAlign": "left",
+                "showTitle": true,
+                "title": "<br><br>Ni unas clases para <br><b>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; hackear redes</b><div><br></div>",
+                "showText": false,
+                "text": "Choose from the large selection of latest pre-made blocks - jumbotrons, hero images, parallax scrolling, video backgrounds, hamburger menu, sticky header and more.",
+                "showButtons": false,
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-lg btn-info\" href=\"https://mobirise.com\">For Windows</a> <a data-app-btn=\"true\" class=\"btn btn-lg btn-white btn-white-outline\" href=\"https://mobirise.com\">For Mac</a>"
+              },
+              {
+                "active": false,
+                "image": "@PROJECT_PATH@/assets/images/theknick-2000x1086-52.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "overlay": false,
+                "overlayOpacity": "0.3",
+                "overlayColor": "#fffffd",
+                "contentAlign": "left",
+                "showTitle": true,
+                "title": "<br>Tampoco unas clases de<div><b>cirugía avanzada.</b></div>",
+                "showText": false,
+                "text": "Choose from the large selection of latest pre-made blocks - jumbotrons, hero images, parallax scrolling, video backgrounds, hamburger menu, sticky header and more.",
+                "showButtons": false,
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-lg btn-info\" href=\"https://mobirise.com\">For Windows</a> <a data-app-btn=\"true\" class=\"btn btn-lg btn-white btn-white-outline\" href=\"https://mobirise.com\">For Mac</a>"
+              },
+              {
+                "active": false,
+                "image": "@PROJECT_PATH@/assets/images/messi-2000x1199-24.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "overlay": true,
+                "overlayOpacity": "0.3",
+                "overlayColor": "#fffffd",
+                "contentAlign": "left",
+                "showTitle": true,
+                "title": "<br>Michi!!! Perdona que te<div><b>corte el rollo...</b></div>",
+                "showText": false,
+                "text": "Choose from the large selection of latest pre-made blocks - jumbotrons, hero images, parallax scrolling, video backgrounds, hamburger menu, sticky header and more.",
+                "showButtons": false,
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-lg btn-info\" href=\"https://mobirise.com\">For Windows</a> <a data-app-btn=\"true\" class=\"btn btn-lg btn-white btn-white-outline\" href=\"https://mobirise.com\">For Mac</a>"
+              },
+              {
+                "active": false,
+                "image": "@PROJECT_PATH@/assets/images/maxresdefault-1-2000x1333-30.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "overlay": false,
+                "overlayOpacity": "0.3",
+                "overlayColor": "#fffffd",
+                "contentAlign": "left",
+                "showTitle": true,
+                "title": "<br><br>Aquí está<br><div><b><br></b></div><div style=\"text-align: center; \">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<b>TU REGALO</b></div>",
+                "showText": false,
+                "text": "Choose from the large selection of latest pre-made blocks - jumbotrons, hero images, parallax scrolling, video backgrounds, hamburger menu, sticky header and more.",
+                "showButtons": false,
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-lg btn-info\" href=\"https://mobirise.com\">For Windows</a> <a data-app-btn=\"true\" class=\"btn btn-lg btn-white btn-white-outline\" href=\"https://mobirise.com\">For Mac</a>"
+              },
+              {
+                "active": true,
+                "image": "@PROJECT_PATH@/assets/images/maxresdefault-1-2000x1333-30.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "overlay": false,
+                "overlayOpacity": "0.3",
+                "overlayColor": "#fffffd",
+                "contentAlign": "left",
+                "showTitle": true,
+                "title": "<br><br>Aquí está<br><div><b><br></b></div><div style=\"text-align: center; \">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<b>TU REGALO</b></div>",
+                "showText": false,
+                "text": "Choose from the large selection of latest pre-made blocks - jumbotrons, hero images, parallax scrolling, video backgrounds, hamburger menu, sticky header and more.",
+                "showButtons": false,
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-lg btn-info\" href=\"https://mobirise.com\">For Windows</a> <a data-app-btn=\"true\" class=\"btn btn-lg btn-white btn-white-outline\" href=\"https://mobirise.com\">For Mac</a>"
+              },
+              {
+                "active": false,
+                "image": "@PROJECT_PATH@/assets/images/1432120675-tyrion-1-2000x1105-37.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "overlay": true,
+                "overlayOpacity": "0.2",
+                "overlayColor": "#fffffd",
+                "contentAlign": "left",
+                "showTitle": true,
+                "title": "Y ahora sí que sí...<div><b>Tu otro regalo</b></div>",
+                "showText": false,
+                "text": "Choose from the large selection of latest pre-made blocks - jumbotrons, hero images, parallax scrolling, video backgrounds, hamburger menu, sticky header and more.",
+                "showButtons": false,
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-lg btn-info\" href=\"https://mobirise.com\">For Windows</a> <a data-app-btn=\"true\" class=\"btn btn-lg btn-white btn-white-outline\" href=\"https://mobirise.com\">For Mac</a>"
+              },
+              {
+                "active": false,
+                "image": "@THEME_PATH@/components/_images/slider/slider03.jpg",
+                "playVideo": true,
+                "videoUrl": "https://www.youtube.com/watch?v=55aC46v8sW8",
+                "overlay": false,
+                "overlayOpacity": "0.3",
+                "contentAlign": "center",
+                "showTitle": true,
+                "title": "Te regalamos...<div><b>3 meses de suscripción</b></div>",
+                "showText": false,
+                "text": "Slide with youtube video background and color overlay. Title and text are aligned to the left.",
+                "showButtons": false,
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-lg btn-info\" href=\"https://mobirise.com\">For Windows</a> <a data-app-btn=\"true\" class=\"btn btn-lg btn-white btn-white-outline\" href=\"https://mobirise.com\">For Mac</a>"
               }
             ],
             "fullScreen": true,
             "bgColor": "#fff",
             "showBullets": false
           },
-          "_anchor": "slider-8",
+          "_anchor": "slider-e",
           "articleLayout": false
         }
       ]
